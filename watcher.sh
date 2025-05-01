@@ -1,7 +1,7 @@
 #!/bin/bash
 
-WATCH_PATH="/home/dahammoudeh/SystemLogs"
-FAKE_SCRIPT="/home/dahammoudeh/Downloads/make_more_files.py"
+WATCH_PATH="/home/user/SystemLogs"
+FAKE_SCRIPT="/home/user/make_more_files.py"
 REFRESH_INTERVAL=1
 
 while true; do

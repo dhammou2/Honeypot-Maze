@@ -1,4 +1,4 @@
-## Step 1: Create the Honeypot Base Folder
+## Step 1: Create the honeypot base folder
 
 Create the root honeypot directory and its initial subfolder:
 
@@ -10,7 +10,7 @@ This folder will serve as the attacker’s entry point.
 
 ---
 
-## Step 2: Create a Persistent Audit Rule
+## Step 2: Create an audit rule
 
 Create a rule file to monitor all activity inside `SystemLogs`.
 
@@ -28,7 +28,7 @@ Save and exit the file.
 
 ---
 
-## Step 3: Load the Audit Rule
+## Step 3: Load the audit rule
 
 Activate the rule so it applies immediately:
 
@@ -71,13 +71,13 @@ When an attacker enters a subfolder like `sys_1234`, the watcher script calls `m
 To view activity logs:
 
 ```bash
-sudo ausearch -k honeypot_files
+sudo ausearch -k honeypot_activity
 ```
 
 To export logs to a file:
 
 ```bash
-sudo ausearch -k honeypot_files > honeypot_raw.log
+sudo ausearch -k honeypot_activity > honeypot_raw.log
 ```
 
 ## Notes

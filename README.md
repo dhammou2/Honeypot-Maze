@@ -3,7 +3,7 @@
 Create the root honeypot directory and its initial subfolder:
 
 ```bash
-mkdir -p /home/dahammoudeh/SystemLogs/sys_1234
+mkdir -p /home/user/SystemLogs/sys_1234
 ```
 
 This folder will serve as the attacker’s entry point.
@@ -21,7 +21,7 @@ sudo nano /etc/audit/rules.d/honeypot.rules
 Paste the following rule:
 
 ```
--a always,exit -F dir=/home/dahammoudeh/SystemLogs -F perm=warx -k honeypot_activity
+-a always,exit -F dir=/home/user/SystemLogs -F perm=warx -k honeypot_activity
 ```
 
 Save and exit the file.

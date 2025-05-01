@@ -46,7 +46,7 @@ You should see the `honeypot_activity` rule listed.
 
 ---
 
-## Step 4: Start the Watcher Script
+## Step 4: Start watcher.sh
 
 This script monitors access to subfolders and triggers fake file and folder generation.
 
@@ -56,7 +56,7 @@ bash watcher.sh
 
 ---
 
-## Step 5: Trigger the Honeypot
+## Step 5: Trigger the honeypot
 
 When an attacker enters a subfolder like `sys_1234`, the watcher script calls `make_more_files.py` which:
 
@@ -66,7 +66,7 @@ When an attacker enters a subfolder like `sys_1234`, the watcher script calls `m
 
 ---
 
-## Step 6: Review Activity Logs
+## Step 6: Review activity logs
 
 To view activity logs:
 
